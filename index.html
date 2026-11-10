@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f5eee8">
+<meta name="description" content="Eliane Lash Oficial — realce o seu olhar com delicadeza, cuidado e atenção ao detalhe.">
+<title>Eliane Lash Oficial | O detalhe que transforma o olhar</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #302722;
+  --muted: #786c64;
+  --cream: #f7f2ed;
+  --paper: #fffdfa;
+  --gold: #ad8967;
+  --line: #e9ded5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.topline {
+  height: 4px;
+  background: linear-gradient(90deg, #9b7557, #e7d4c4, #b28d6c);
+}
+
+header {
+  position: absolute;
+  z-index: 5;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  padding: 24px 6.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.brand {
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  letter-spacing: .04em;
+  line-height: 1.05;
+}
+
+.brand small {
+  display: block;
+  font: 9px "DM Sans", sans-serif;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  margin-top: 7px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+nav a {
+  opacity: .9;
+}
+
+nav a:hover {
+  color: #f1d9c5;
+}
+
+.nav-cta {
+  border: 1px solid #ffffff9c;
+  padding: 12px 18px;
+  border-radius: 2px;
+}
+
+.hero {
+  min-height: 690px;
+  height: min(790px, 94vh);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #6b5143;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(31,23,20,.78), rgba(44,31,25,.56) 42%, rgba(44,31,25,.08)),
+    url("images/lash-hero.png") center 42% / cover no-repeat;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, 87%);
+  margin: 60px auto 0;
+  color: white;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: #e8d1bd;
+  font-weight: 600;
+}
+
+h1 {
+  font: 500 clamp(48px, 7vw, 86px)/1.03 "Playfair Display", serif;
+  max-width: 650px;
+  margin: 24px 0;
+}
+
+h1 em {
+  font-weight: 400;
+  color: #e8cdb6;
+}
+
+.hero-copy {
+  max-width: 420px;
+  color: #f2e9e2;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  background: #ead8c8;
+  color: #302722;
+  padding: 16px 22px;
+  font-size: 11px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: .25s;
+}
+
+.button:hover {
+  background: #fff3e9;
+  transform: translateY(-2px);
+}
+
+.hero-note {
+  margin-top: 62px;
+  color: #ffffffb8;
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 105px 7%;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 10%;
+  align-items: center;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.intro-image {
+  position: relative;
+  padding: 0 26px 26px 0;
+}
+
+.intro-image:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 72%;
+  height: 72%;
+  border: 1px solid #c4a58a;
+  z-index: 0;
+}
+
+.intro-image img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center 30%;
+  position: relative;
+  z-index: 1;
+}
+
+.section-kicker {
+  font-size: 10px;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+h2 {
+  font: 500 clamp(35px, 4.2vw, 53px)/1.13 "Playfair Display", serif;
+  margin-bottom: 22px;
+}
+
+.intro p,
+.service-copy,
+.closing-copy {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.signature {
+  font: italic 25px "Playfair Display", serif;
+  color: #a17b5c;
+  margin-top: 26px;
+}
+
+.services {
+  background: #eee4dc;
+}
+
+.services-inner {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.section-head {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 55px;
+}
+
+.section-head p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--paper);
+  display: grid;
+  grid-template-columns: 42% 1fr;
+  min-height: 300px;
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.service-info {
+  padding: 35px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-info .number {
+  font-size: 10px;
+  letter-spacing: .2em;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+h3 {
+  font: 500 28px "Playfair Display", serif;
+  margin-bottom: 12px;
+}
+
+.service-info p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.text-link {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-weight: 700;
+  border-bottom: 1px solid #c4a58a;
+  padding-bottom: 7px;
+  align-self: flex-start;
+}
+
+.quote {
+  padding: 100px 7%;
+  text-align: center;
+  background: var(--paper);
+}
+
+.quote blockquote {
+  max-width: 800px;
+  margin: 0 auto;
+  font: 400 clamp(28px, 4vw, 43px)/1.35 "Playfair Display", serif;
+}
+
+.quote span {
+  display: block;
+  margin-top: 25px;
+  font-size: 10px;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.contact {
+  background: #332923;
+  color: white;
+  padding: 100px 7%;
+  text-align: center;
+}
+
+.contact h2 {
+  max-width: 650px;
+  margin: 0 auto 20px;
+}
+
+.contact p {
+  max-width: 510px;
+  margin: 0 auto 32px;
+  color: #d4c7bd;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.contact .button {
+  background: #e5cdb9;
+}
+
+.social {
+  margin-top: 28px;
+  color: #d8c5b5;
+  font-size: 12px;
+  letter-spacing: .1em;
+}
+
+footer {
+  padding: 22px 7%;
+  background: #251d19;
+  color: #a99a8f;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 10px;
+  letter-spacing: .08em;
+}
+
+@media(max-width:800px) {
+  header {
+    padding: 20px 6%;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  nav {
+    gap: 14px;
+  }
+
+  nav a:not(.nav-cta) {
+    display: none;
+  }
+
+  .hero {
+    min-height: 680px;
+    height: 88vh;
+  }
+
+  .hero-bg {
+    background-position: 57% center;
+  }
+
+  .hero-content {
+    width: 88%;
+    margin-top: 65px;
+  }
+
+  h1 {
+    font-size: 57px;
+  }
+
+  .section {
+    padding: 76px 7%;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .intro-image {
+    max-width: 520px;
+  }
+
+  .intro-image img {
+    height: 430px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    grid-template-columns: 40% 1fr;
+  }
+
+  .service-info {
+    padding: 25px 20px;
+  }
+
+  .quote,
+  .contact {
+    padding: 78px 7%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media(max-width:480px) {
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero-bg {
+    background-position: 58% center;
+  }
+
+  .hero-content {
+    margin-top: 60px;
+  }
+
+  h1 {
+    font-size: 49px;
+    max-width: 340px;
+  }
+
+  .hero-copy {
+    max-width: 310px;
+  }
+
+  .hero-note {
+    margin-top: 48px;
+  }
+
+  .service-card {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card img {
+    height: 260px;
+    min-height: 0;
+  }
+
+  .service-info {
+    padding: 28px;
+  }
+
+  .intro-image img {
+    height: 380px;
+  }
+
+  .nav-cta {
+    padding: 10px 12px;
+    font-size: 9px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topline"></div>
+
+<header>
+  <a class="brand" href="#inicio">
+    Eliane Lash
+    <small>Oficial · Beauty</small>
+  </a>
+
+  <nav aria-label="Navegação principal">
+    <a href="#sobre">A essência</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contacto" class="nav-cta">Marcar / Saber mais</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+
+  <div class="hero-content">
+    <div class="eyebrow">
+      Eliane Lash Oficial · Beleza com intenção
+    </div>
+
+    <h1>
+      O detalhe que transforma <em>o olhar.</em>
+    </h1>
+
+    <p class="hero-copy">
+      Realce a sua beleza natural com um olhar mais definido,
+      elegante e cheio de expressão. Cada detalhe merece cuidado.
+    </p>
+
+    <a class="button"
+       href="https://www.instagram.com/eliane_lash_oficial/"
+       target="_blank" rel="noopener">
+      Fale comigo no Instagram <span>↗</span>
+    </a>
+
+    <div class="hero-note">
+      Delicadeza · Precisão · Cuidado
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sobre">
+  <div class="intro">
+
+    <div class="intro-image">
+      <img src="images/beauty-portrait.png"
+           alt="Imagem ilustrativa de beleza num ambiente elegante">
+    </div>
+
+    <div>
+      <div class="section-kicker">A essência Eliane Lash</div>
+
+      <h2>Beleza que respeita a sua essência.</h2>
+
+      <p>
+        O olhar tem uma beleza única. O meu propósito é valorizá-lo
+        com atenção, delicadeza e cuidado em cada etapa.
+      </p>
+
+      <p>
+        Mais do que realçar as pestanas, acredito num resultado
+        harmonioso, pensado para destacar aquilo que já torna
+        cada pessoa especial.
+      </p>
+
+      <div class="signature">
+        Um olhar, uma expressão, a sua identidade.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section services" id="servicos">
+  <div class="services-inner">
+
+    <div class="section-head">
+      <div class="section-kicker">O cuidado em destaque</div>
+
+      <h2>Pequenos detalhes.<br>Uma grande diferença.</h2>
+
+      <p>
+        Conheça um dos cuidados dedicados a valorizar o seu olhar.
+        Para informações sobre disponibilidade e marcações,
+        entre em contacto.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service-card">
+        <img src="images/lash-lift-detail.png"
+             alt="Imagem ilustrativa de pestanas curvadas e definidas">
+
+        <div class="service-info">
+          <div class="number">01 / OLHAR NATURAL</div>
+          <h3>Lash Lifting</h3>
+
+          <p>
+            Curvatura, definição e praticidade para realçar
+            as pestanas naturais e abrir o olhar.
+          </p>
+
+          <a class="text-link"
+             href="https://www.instagram.com/eliane_lash_oficial/"
+             target="_blank" rel="noopener">
+            Pedir informações ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="images/lash-hero.png"
+             alt="Imagem ilustrativa de um olhar realçado por pestanas">
+
+        <div class="service-info">
+          <div class="number">02 / ATENÇÃO AO DETALHE</div>
+          <h3>O seu olhar</h3>
+
+          <p>
+            Cada olhar é único. Fale comigo para conhecer
+            os cuidados disponíveis e encontrar a opção
+            adequada para si.
+          </p>
+
+          <a class="text-link"
+             href="https://www.instagram.com/eliane_lash_oficial/"
+             target="_blank" rel="noopener">
+            Conversar comigo ↗
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <blockquote>
+    “A beleza não precisa de exageros.
+    Às vezes, tudo começa num detalhe.”
+  </blockquote>
+
+  <span>Eliane Lash Oficial</span>
+</section>
+
+<section class="contact" id="contacto">
+
+  <div class="section-kicker">Vamos conversar?</div>
+
+  <h2>O próximo olhar especial pode ser o seu.</h2>
+
+  <p>
+    Tem dúvidas sobre o Lash Lifting ou pretende saber
+    mais sobre marcações? Envie uma mensagem.
+    Terei todo o gosto em falar consigo.
+  </p>
+
+  <a class="button"
+     href="https://www.instagram.com/eliane_lash_oficial/"
+     target="_blank" rel="noopener">
+    Enviar mensagem no Instagram <span>↗</span>
+  </a>
+
+  <div class="social">@eliane_lash_oficial</div>
+</section>
+
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Eliane Lash Oficial</span>
+  <span>Beleza com delicadeza e atenção ao detalhe.</span>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+</html>
